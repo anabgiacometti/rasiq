@@ -1,0 +1,35 @@
+#section {
+    min-height: 100vh;
+    background-color: whitesmoke;
+}
+
+#section.white {
+    background-color: white;
+}
+
+#section.light {
+    background-color: whitesmoke;
+}
+
+#section>.content {
+    margin: 100px auto;
+    width: 75vw;
+}
+
+#section>.content>h1 {
+    font-size: 2em;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #2e2e2e;
+    text-align: center;
+}
+
+#section>.content>p {
+    font-size: 1.25em;
+    font-weight: 300;
+    color: #2e2e2e;
+    text-align: center;
+    margin-bottom: 2em;
+    line-height: 1.75em;
+}

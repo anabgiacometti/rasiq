@@ -1,0 +1,24 @@
+
+#section>.content>.labels {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+#section>.content>.labels>.label {
+    text-align: center;
+    width: 200px;
+    margin: 0 50px
+}
+
+#section>.content>.labels>.label>img {
+    width: 75px;
+    margin-bottom: 15px
+}
+
+#section>.content>.labels>.label>p {
+    font-weight: 300;
+    color: #2e2e2e;
+    text-align: center;
+    line-height: 1.25em;
+}
