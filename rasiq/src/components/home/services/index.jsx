@@ -1,7 +1,11 @@
 import './style.css'
-import prizeIcon from '../../../static/images/prize.png'
+import residencial from '../../../static/images/residencial.jpg'
+import comercial from '../../../static/images/comercial.jpg'
 import Separator from '../section/separator';
 import Section from '../section';
+import { HiArrowRight } from "react-icons/hi";
+import RippleButton from '../../button/rippleButton';
+
 
 
 export default function Services() {
@@ -10,30 +14,34 @@ export default function Services() {
         <Section bgColor={'white'}>
             <h1>Nosso Serviços</h1>
             <Separator />
-            <p>
-                Sollicitudin ac orci phasellus egestas. Habitasse platea dictumst <strong>quisque sagittis</strong> purus sit amet volutpat consequat. Nibh cras pulvinar mattis nunc sed <strong>blandit libero volutpat sed</strong>. Consectetur lorem donec massa sapien faucibus et. Egestas pretium aenean pharetra magna ac placerat. Id nibh tortor id aliquet lectus.                </p>
-            <p>
-                Scelerisque purus semper eget duis. Sed blandit libero volutpat sed cras ornare arcu dui vivamus. Faucibus purus in <i>massa tempor</i>. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique.
-            </p>
-            <p>
-                Non odio euismod lacinia at quis risus sed. Scelerisque mauris pellentesque pulvinar pellentesque.
-            </p>
-            <div className='labels'>
-                <div className='label'>
-                    <img src={prizeIcon} />
-                    <p>Non odio euismod lacinia at quis risus sed. Scelerisque mauris pellentesque pulvinar pellentesque.</p>
+            <div className='cards'>
+                <div className='card' style={{ backgroundImage: `url('${residencial}')` }}>
+                    <div className='text'>
+                        <h1>Projetos Residenciais</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <RippleButton>Saiba Mais <HiArrowRight /></RippleButton>
+                    </div>
                 </div>
-                <div className='label'>
-                    <img src={prizeIcon} />
-                    <p>Non odio euismod lacinia at quis risus sed. Scelerisque mauris pellentesque pulvinar pellentesque.</p>
+                <div className='card' style={{ backgroundImage: `url('${comercial}')` }}>
+                    <div className='text'>
+                        <h1>Projetos Comerciais</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <RippleButton>Saiba Mais <HiArrowRight /></RippleButton>
+                    </div>
                 </div>
-                <div className='label'>
-                    <img src={prizeIcon} />
-                    <p>Non odio euismod lacinia at quis risus sed. Scelerisque mauris pellentesque pulvinar pellentesque.</p>
+                <div className='card' style={{ backgroundImage: `url('${comercial}')` }}>
+                    <div className='text'>
+                        <h1>Projetos Comerciais</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <RippleButton>Saiba Mais <HiArrowRight /></RippleButton>
+                    </div>
                 </div>
-                <div className='label'>
-                    <img src={prizeIcon} />
-                    <p>Non odio euismod lacinia at quis risus sed. Scelerisque mauris pellentesque pulvinar pellentesque.</p>
+                <div className='card' style={{ backgroundImage: `url('${residencial}')` }}>
+                    <div className='text'>
+                        <h1>Projetos Residenciais</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <RippleButton>Saiba Mais <HiArrowRight /></RippleButton>
+                    </div>
                 </div>
             </div>
         </Section>

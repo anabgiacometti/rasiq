@@ -1,0 +1,49 @@
+#section>.content>.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 4.5vw;
+}
+
+#section>.content>.cards>.card {
+    width: 35vw;
+    height: 30vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 350ms;
+    background-blend-mode: multiply;
+}
+
+#section>.content>.cards>.card>.text {
+    margin: 2em;
+    text-align: center;
+    color: white;
+    transition: 350ms;
+    opacity: 0;
+}
+
+#section>.content>.cards>.card:hover {
+    background-color: rgb(50 50 50);
+}
+
+#section>.content>.cards>.card:hover .text {
+    opacity: 1
+}
+
+#section>.content>.cards>.card>.text>h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2em;
+    margin-bottom: 1em
+}
+
+#section>.content>.cards>.card>.text>p {
+    font-weight: 300;
+    font-size: 1.15em;
+    margin-bottom: 2em
+}
+
